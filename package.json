@@ -7,7 +7,7 @@
     "start": "vite",
     "osc-bridge": "node osc-bridge/index.js",
     "build-bridge": "npx pkg osc-bridge/index.js --config osc-bridge/package.json --out-path osc-bridge/dist",
-    "build": "tsc --noEmit && vite build && node generate-sw.js",
+    "build": "rm -rf /tmp/hexatone-tsbuild && tsc --outDir /tmp/hexatone-tsbuild && vite build && node generate-sw.js && rm -rf /tmp/hexatone-tsbuild",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",

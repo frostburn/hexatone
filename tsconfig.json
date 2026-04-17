@@ -5,7 +5,6 @@
     "moduleResolution": "Bundler",
     "allowJs": true,
     "checkJs": false,
-    "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "strict": false,
@@ -13,6 +12,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx", "vite.config.*", "eslint.config.js"],
-  "exclude": ["dist", "node_modules"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "vite.config.*",
+    "eslint.config.js"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
