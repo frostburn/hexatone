@@ -1,4 +1,3 @@
-
 const Blurb = () => (
   <div>
     <p>
