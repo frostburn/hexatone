@@ -1,4 +1,6 @@
-const Blurb = () => (
+type BlurbProps = Record<string, never>;
+
+const Blurb = (_props: BlurbProps) => (
   <div>
     <p>
       Designed by <a href="http://siementerpstra.com/">Siemen Terpstra</a> based on{" "}
@@ -47,4 +49,5 @@ const Blurb = () => (
     </p>
   </div>
 );
+
 export default Blurb;
